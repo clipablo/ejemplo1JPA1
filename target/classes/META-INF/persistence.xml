@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="EJEMPLO1-PU" transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Persona</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Mecanico</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Direccion</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Box</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Taller</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Vehiculo</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Mantenimiento</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.RenglonMantenimiento</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Paniol</class>
+		<class>david.projects.ejemplo1JPA.persistencia.dominio.Repuesto</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/ejemplo1db" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.user" value="ejemplo1" />
+			<property name="javax.persistence.jdbc.password" value="d" />
+
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
+
+		</properties>
+		
+	</persistence-unit>
+	
+</persistence>
