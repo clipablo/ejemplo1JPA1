@@ -33,11 +33,11 @@ public class Box {
 
 	public int getNumero() {
 		return numero;
-	}
+	}/*
 
 	public void setNumero(int numero) {
 		this.numero = numero;
-	}
+	}*/
 
 	public String getCategoria() {
 		return categoria;

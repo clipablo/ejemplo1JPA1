@@ -7,7 +7,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-
+   
+   
 import david.projects.ejemplo1JPA.persistencia.dominio.Direccion;
 import david.projects.ejemplo1JPA.persistencia.dominio.Mecanico;
 import david.projects.ejemplo1JPA.persistencia.dominio.Persona;
